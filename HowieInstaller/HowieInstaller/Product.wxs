@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="HowieInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Howie" UpgradeCode="92747ab5-d113-4d99-8ee2-fc3fcb0aeff1">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <Feature Id="ProductFeature" Title="HowieInstaller" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="HowieInstaller" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <Component Id="ProductComponent" Guid="CA7A3146-FA5D-4780-861A-BEC667E32508">
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-console-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-datetime-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-debug-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-errorhandling-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-file-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-file-l1-2-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-file-l2-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-handle-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-heap-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-interlocked-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-libraryloader-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-localization-l1-2-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-memory-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-namedpipe-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-processenvironment-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-processthreads-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-processthreads-l1-1-1.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-profile-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-rtlsupport-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-string-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-synch-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-synch-l1-2-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-sysinfo-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-timezone-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-core-util-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-conio-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-convert-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-environment-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-filesystem-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-heap-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-locale-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-math-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-multibyte-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-private-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-process-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-runtime-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-stdio-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-string-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-time-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\api-ms-win-crt-utility-l1-1-0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\clrcompression.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\clretwrc.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\clrjit.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\coreclr.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\dbgshim.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\hostfxr.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\hostpolicy.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\HowieConsoleApp.deps.json" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\HowieConsoleApp.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\HowieConsoleApp.exe" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\HowieConsoleApp.pdb"  />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\HowieConsoleApp.runtimeconfig.json" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\Microsoft.CSharp.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\Microsoft.DiaSymReader.Native.amd64.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\Microsoft.VisualBasic.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\Microsoft.Win32.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\Microsoft.Win32.Registry.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscordaccore.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscordaccore_amd64_amd64_4.6.00001.0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscordbi.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscorlib.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscorrc.debug.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\mscorrc.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\netstandard.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\sos.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\SOS.NETCore.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\sos_amd64_amd64_4.6.00001.0.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.AppContext.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Buffers.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Collections.Concurrent.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Collections.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Collections.Immutable.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Collections.NonGeneric.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Collections.Specialized.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.Annotations.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.Composition.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.DataAnnotations.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.EventBasedAsync.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ComponentModel.TypeConverter.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Configuration.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Console.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Core.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Data.Common.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Data.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.Contracts.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.Debug.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.DiagnosticSource.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.FileVersionInfo.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.Process.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.StackTrace.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.TextWriterTraceListener.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.Tools.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.TraceSource.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Diagnostics.Tracing.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Drawing.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Drawing.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Dynamic.Runtime.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Globalization.Calendars.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Globalization.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Globalization.Extensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.Compression.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.Compression.FileSystem.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.Compression.ZipFile.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.FileSystem.AccessControl.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.FileSystem.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.FileSystem.DriveInfo.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.FileSystem.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.FileSystem.Watcher.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.IsolatedStorage.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.MemoryMappedFiles.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.Pipes.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.IO.UnmanagedMemoryStream.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Linq.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Linq.Expressions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Linq.Parallel.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Linq.Queryable.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Http.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.HttpListener.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Mail.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.NameResolution.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.NetworkInformation.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Ping.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Requests.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Security.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.ServicePoint.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.Sockets.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.WebClient.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.WebHeaderCollection.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.WebProxy.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.WebSockets.Client.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Net.WebSockets.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Numerics.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Numerics.Vectors.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ObjectModel.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Private.CoreLib.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Private.DataContractSerialization.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Private.Uri.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Private.Xml.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Private.Xml.Linq.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.DispatchProxy.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Emit.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Emit.ILGeneration.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Emit.Lightweight.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Extensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Metadata.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Reflection.TypeExtensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Resources.Reader.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Resources.ResourceManager.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Resources.Writer.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.CompilerServices.VisualC.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Extensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Handles.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.InteropServices.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.InteropServices.RuntimeInformation.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.InteropServices.WindowsRuntime.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Loader.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Numerics.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Serialization.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Serialization.Formatters.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Serialization.Json.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Serialization.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Runtime.Serialization.Xml.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.AccessControl.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Claims.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.Algorithms.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.Cng.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.Csp.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.Encoding.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.OpenSsl.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.Primitives.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Cryptography.X509Certificates.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Principal.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.Principal.Windows.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Security.SecureString.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ServiceModel.Web.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ServiceProcess.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Text.Encoding.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Text.Encoding.Extensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Text.RegularExpressions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Overlapped.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Tasks.Dataflow.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Tasks.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Tasks.Extensions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Tasks.Parallel.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Thread.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.ThreadPool.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Threading.Timer.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Transactions.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Transactions.Local.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.ValueTuple.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Web.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Web.HttpUtility.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Windows.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.Linq.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.ReaderWriter.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.Serialization.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.XDocument.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.XmlDocument.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.XmlSerializer.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.XPath.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\System.Xml.XPath.XDocument.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\ucrtbase.dll" />
+<File Source="$(var.HowieConsoleApp.ProjectDir)bin\Release\PublishOutput\WindowsBase.dll" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
