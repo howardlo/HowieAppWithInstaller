@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\WiX Toolset v3.11\bin\heat" dir "$(SolutionDir)/HowieConsoleApp/bin/Release/PublishOutput"  -dr APPLICATIONFOLDER -cg HowieConsoleAppComponents -gg -g1 -sf -srd  -var "var.HowieConsoleApp.PublishOutput" -out "$(SolutionDir)/HowieConsoleAppInstaller/HowieConsoleApp.wxs" -t "$(SolutionDir)HowieConsoleAppInstaller/Filter.xslt"
+
+powershell.exe -ExecutionPolicy Unrestricted -file $(ProjectDir)create-wxs.ps1

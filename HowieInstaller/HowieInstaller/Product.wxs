@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="HowieInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Howie" UpgradeCode="92747ab5-d113-4d99-8ee2-fc3fcb0aeff1">
+  <Product Id="44654b61-a474-4a51-b760-02f3a5b51df0" Name="HowieInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Howie" 
+           UpgradeCode="40ab14e8-0503-4e53-b720-0db203b62c4d">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -14,7 +15,7 @@
   <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLFOLDER" Name="HowieInstaller" />
+        <Directory Id="INSTALLFOLDER" Name="HowieApp" />
       </Directory>
     </Directory>
   </Fragment>

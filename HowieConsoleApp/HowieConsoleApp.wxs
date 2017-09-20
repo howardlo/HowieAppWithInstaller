@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dir39B22699688E51DCD8DCBB99A47E835B" Name="Debug" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir68C25E7A134DED59895296CC74ACFAC7">
+            <Component Id="cmp47E3A99630D232C93CF84B1A0D69005E" Guid="PUT-GUID-HERE">
+                <File Id="fil3725BE8C39B58DEF4BFCABE96910861E" KeyPath="yes" Source="SourceDir\netcoreapp2.0\HowieConsoleApp.runtimeconfig.json" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir68C25E7A134DED59895296CC74ACFAC7">
+            <Component Id="cmp54A951A0B1076C24409F9612349F439C" Guid="PUT-GUID-HERE">
+                <File Id="fil692555FA932BB0E37112493B4FF263A7" KeyPath="yes" Source="SourceDir\netcoreapp2.0\HowieConsoleApp.dll" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir68C25E7A134DED59895296CC74ACFAC7">
+            <Component Id="cmpB2544B43A61472868E69C6A98530618B" Guid="PUT-GUID-HERE">
+                <File Id="fil61612F43E4821B3E2AF66AA91196BFE5" KeyPath="yes" Source="SourceDir\netcoreapp2.0\HowieConsoleApp.runtimeconfig.dev.json" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir68C25E7A134DED59895296CC74ACFAC7">
+            <Component Id="cmpC8F3F5876B892FC53B063A231C60B9B6" Guid="PUT-GUID-HERE">
+                <File Id="fil5E86729082955466AE5075D2D79B0B17" KeyPath="yes" Source="SourceDir\netcoreapp2.0\HowieConsoleApp.pdb" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir68C25E7A134DED59895296CC74ACFAC7">
+            <Component Id="cmpEBC860351A6A9952E65A9E3AD436D64F" Guid="PUT-GUID-HERE">
+                <File Id="fil7CB7EDB6A36ACE3161A81229DE1CAEB4" KeyPath="yes" Source="SourceDir\netcoreapp2.0\HowieConsoleApp.deps.json" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir39B22699688E51DCD8DCBB99A47E835B">
+            <Directory Id="dir68C25E7A134DED59895296CC74ACFAC7" Name="netcoreapp2.0" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>
